@@ -3,7 +3,7 @@ import { ApiBody, ApiHideProperty, ApiOperation, ApiResponse, ApiTags } from '@n
 import { CalcImovelService } from './calc-imovel.service';
 import { CalculoImovelDTO } from './dtos/calc-imovel.dto';
 import { CalculoImovelErrorValidacaoDTO } from './dtos/calc-imovel.erro.dto';
-import { CalculoImovelRetornoDTO } from './dtos/calc-imovel.retorno.dto';
+import { CalculoImovelResponseDTO } from './dtos/calc-imovel.response.dto';
 import { CalcImovelValidationClassPipe } from './pipes/calc-imovel.validation.pipe';
 
 @ApiTags('Calculo de valor do imóvel')
@@ -13,7 +13,7 @@ export class CalcImovelController {
   constructor(private calcImovelService: CalcImovelService){};
 
   @ApiOperation({ summary: 'Retorna Calculo Total do Imóvel.' })
-  @ApiResponse({ status: 200, description: 'Sucesso no cálculo', type: CalculoImovelRetornoDTO })
+  @ApiResponse({ status: 200, description: 'Sucesso no cálculo', type: CalculoImovelResponseDTO })
   @ApiResponse({ status: 400, description: 'Erro validação no cálculo', type: [CalculoImovelErrorValidacaoDTO] })
   @ApiBody({required: true, type: CalculoImovelDTO})
   @UsePipes(ValidationPipe, CalcImovelValidationClassPipe)

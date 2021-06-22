@@ -1,29 +1,31 @@
-import { BadGatewayException, BadRequestException, HttpException, Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CalculoImovelDTO } from './dtos/calc-imovel.dto';
+import { CalculoImovelResponseDTO } from './dtos/calc-imovel.response.dto';
 import axios from 'axios';
+
+const url = "https://api1-preco-metro-quadrado.herokuapp.com/api/preco/metroquadradro"
 
 @Injectable()
 export class CalcImovelService {
 
   async calcularValorImovel(calculoImovelDTO: CalculoImovelDTO): Promise <any> {
     
-    const qtMts = calculoImovelDTO.qtde_metros;
-
-    let result = {};
+    const qtMts: number = calculoImovelDTO.qtdeMetros;
     let valorMetroQuadrado: number = 0;
-    
+
     try {
-      let data = await axios.get('https://viacep.com.br/ws/87308192/json/')
-      result = data.data;
-      valorMetroQuadrado = 500.00;
+      let response = await axios.get(url)
+      const result = response.data;
+      valorMetroQuadrado = result.preco;
 
     } catch (error) {
-      throw new BadGatewayException('Erro ao busca preço do metro quadrado');       
+      throw new BadRequestException('Não foi possível recuperar o valor do metro quadrado no service externo');       
     }
 
-    let calculado = (valorMetroQuadrado * qtMts).toFixed(2);    
+    let calculado = parseFloat((valorMetroQuadrado * qtMts).toFixed(2));
+    const calculoImovelResponseDTO: CalculoImovelResponseDTO = { valorCalculado: calculado, valorMetro: valorMetroQuadrado };
 
-    return { valor_calculado: calculado, cep: result};
+    return calculoImovelResponseDTO;
   }
 
 }

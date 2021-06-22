@@ -6,6 +6,6 @@ export class CalculoImovelDTO {
   @IsNotEmpty({message: "qtde_metros não pode ser nulo."})
   @IsInt({message: "qtde_metros deve ser um número"})
   @ApiProperty({ minimum: 10, maximum: 10000, example: 10, description: 'Quantidade de metros quadrados' })
-  qtde_metros: number;
+  qtdeMetros: number;
 
 }
