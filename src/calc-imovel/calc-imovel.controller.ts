@@ -1,5 +1,5 @@
-import { Body, Controller, Get, Options, Post, UsePipes, ValidationPipe } from '@nestjs/common';
-import { ApiBody, ApiHideProperty, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { Body, Controller, Get, HttpCode, Options, Post, UsePipes, ValidationPipe } from '@nestjs/common';
+import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { CalcImovelService } from './calc-imovel.service';
 import { CalculoImovelDTO } from './dtos/calc-imovel.dto';
 import { CalculoImovelErrorValidacaoDTO } from './dtos/calc-imovel.erro.dto';
@@ -17,6 +17,7 @@ export class CalcImovelController {
   @ApiResponse({ status: 400, description: 'Erro validação no cálculo', type: [CalculoImovelErrorValidacaoDTO] })
   @ApiBody({required: true, type: CalculoImovelDTO})
   @UsePipes(ValidationPipe, CalcImovelValidationClassPipe)
+  @HttpCode(200)
   @Post()
   async calcularValorImovel(@Body() calculoImovelDTO: CalculoImovelDTO) {
     return this.calcImovelService.calcularValorImovel(calculoImovelDTO);
