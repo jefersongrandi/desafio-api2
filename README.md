@@ -50,9 +50,9 @@ A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo
 <h4>Pré Requisitos</h4>
   É necessário ter instalado em sua máquina a ferramenta [Docker](https://docker.com)
 
-Acesse o endereço <a href="https://hub.docker.com/repository/docker/010502/node-alphine-apicalcimov">010502
+Acesse o endereço <a href="https://hub.docker.com/repository/docker/010502/node-alpine-apicalcimov">010502
 /
-node-alphine-apicalcimovr</a> para ver mais sobre a imagem container.
+node-alpine-apicalcimov</a> para ver mais sobre a imagem container.
 
 ### 🛠 Tecnologias
 
