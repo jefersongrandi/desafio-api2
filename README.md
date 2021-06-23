@@ -72,3 +72,8 @@ Feito por Jeferson Grandi 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Jeferson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/jeferson-grandi-6a145037)](www.linkedin.com/in/jeferson-grandi-6a145037) 
 [![Gmail Badge](https://img.shields.io/badge/-jeferson.grandi@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jeferson.grandi@gmail.com)](mailto:jeferson.grandi@gmail.com)
+
+
+## License
+
+[MIT licensed](LICENSE).
