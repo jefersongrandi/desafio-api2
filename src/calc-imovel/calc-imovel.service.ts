@@ -4,6 +4,7 @@ import { CalculoImovelResponseDTO } from './dtos/calc-imovel.response.dto';
 import axios from 'axios';
 
 const url = "https://api1-preco-metro-quadrado.herokuapp.com/api/preco/metroquadrado"
+//const url = "http://localhost:3001/api/preco/metroquadrado"
 
 @Injectable()
 export class CalcImovelService {

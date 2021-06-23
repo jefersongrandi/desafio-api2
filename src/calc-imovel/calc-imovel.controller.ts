@@ -12,7 +12,7 @@ export class CalcImovelController {
 
   constructor(private calcImovelService: CalcImovelService){};
 
-  @ApiOperation({ summary: 'Retorna Calculo Total do Imóvel.' })
+  @ApiOperation({ summary: 'Retorna Calculo do Valor Total do Imóvel.' })
   @ApiResponse({ status: 200, description: 'Sucesso no cálculo', type: CalculoImovelResponseDTO })
   @ApiResponse({ status: 400, description: 'Erro validação no cálculo', type: [CalculoImovelErrorValidacaoDTO] })
   @ApiBody({required: true, type: CalculoImovelDTO})
