@@ -74,6 +74,6 @@ Feito por Jeferson Grandi 👋🏽 Entre em contato!
 [![Gmail Badge](https://img.shields.io/badge/-jeferson.grandi@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jeferson.grandi@gmail.com)](mailto:jeferson.grandi@gmail.com)
 
 
-## License
+## Licença
 
 [MIT licensed](LICENSE).
