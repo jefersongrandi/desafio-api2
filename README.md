@@ -1,27 +1,3 @@
-## Api Node com NestJS 
-<<<<<<< HEAD
-
-
-## Descrição do Projeto
-
-A aplicação foi desenvolvida em node utilizando o framework NestJS. 
-
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
-
-
-
-## Execução em container
-=======
->>>>>>> b1a91047936b0b1a2fc4160a0447161f5aab80e1
-
-
 ## Descrição do Projeto
 
 A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo é obter o cálculo do imóvel depois de enviar a quantidade de metros quadrados que deve ser informado pelo usuário. 
