@@ -1,3 +1,9 @@
+## Execução em container
+
+Link para imagem Docker. Orientações estão no repositorio: <a href="https://hub.docker.com/repository/docker/010502/node-alphine-apivlmts" target="_blank"> Docker </a>
+
+## Orientações de Instalação
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
