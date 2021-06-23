@@ -3,7 +3,7 @@
 
 ## Descrição do Projeto
 
-A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo e retornar um objeto contendo o valor do metro quadrado.
+A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo é obter o cálculo do imóvel depois de enviar a quantidade de metros quadrados que deve ser informado pelo usuário. 
 
 ## Orientações de Instalação
   
@@ -29,7 +29,9 @@ A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo
   # Execute a aplicação em modo de desenvolvimento
   $ npm run start:dev
 
-  # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+  # O servidor inciará na porta:3000
+  
+  #acesse <http://localhost:3000/api> para ter acesso a documentação
   ```
   
   ## Test
