@@ -32,6 +32,19 @@ A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo
   # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
   ```
   
+  ## Test
+
+  ```bash
+  # unit tests
+  $ npm run test:watch
+
+  # e2e tests
+  $ npm run test:e2e
+
+  # test coverage
+  $ npm run test:cov
+  ```
+  
   
 ## Rodando a api em container Docker
 
@@ -41,4 +54,21 @@ A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo
 Acesse o endereço <a href="https://hub.docker.com/repository/docker/010502/node-alphine-apicalcimov">010502
 /
 node-alphine-apicalcimovr</a> para ver mais sobre a imagem container.
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [NestJS](https://nestjs.com/)
+- [Jest](https://jestjs.io/pt-BR/)
+- [TypeScript](https://www.typescriptlang.org/)
   
+  
+### Autor
+---
+
+Feito por Jeferson Grandi 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Jeferson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/jeferson-grandi-6a145037)](www.linkedin.com/in/jeferson-grandi-6a145037) 
+[![Gmail Badge](https://img.shields.io/badge/-jeferson.grandi@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jeferson.grandi@gmail.com)](mailto:jeferson.grandi@gmail.com)
