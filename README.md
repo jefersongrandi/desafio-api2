@@ -49,7 +49,7 @@ A aplicação foi desenvolvida em node utilizando o framework NestJS. O objetivo
 ## Rodando a api em container Docker
 
 <h4>Pré Requisitos</h4>
-  É necessário ter instalado em sua máquina a ferramente [Docker](https://docker.com)
+  É necessário ter instalado em sua máquina a ferramenta [Docker](https://docker.com)
 
 Acesse o endereço <a href="https://hub.docker.com/repository/docker/010502/node-alphine-apicalcimov">010502
 /
