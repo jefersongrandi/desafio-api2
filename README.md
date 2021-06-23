@@ -1,3 +1,21 @@
+## Api Node com NestJS 
+
+
+## Descrição do Projeto
+
+A aplicação foi desenvolvida em node utilizando o framework NestJS. 
+
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
+
+
+
 ## Execução em container
 
 Link para imagem Docker. Orientações estão no repositorio: <a href="https://hub.docker.com/repository/docker/010502/node-alphine-apivlmts" target="_blank"> Docker </a>
