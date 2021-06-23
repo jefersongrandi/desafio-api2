@@ -19,7 +19,7 @@ export class CalcImovelController {
   @UsePipes(ValidationPipe, CalcImovelValidationClassPipe)
   @HttpCode(200)
   @Post()
-  async calcularValorImovel(@Body() calculoImovelDTO: CalculoImovelDTO) {
+  async calcularValorImovel(@Body() calculoImovelDTO: CalculoImovelDTO): Promise<CalculoImovelResponseDTO> {
     return this.calcImovelService.calcularValorImovel(calculoImovelDTO);
   }
 
